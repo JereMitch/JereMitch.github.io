@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #f0f2ef;
+  --primary-font: "oswald";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "oswald";
+}
+
+.navbar {
+  //   border: solid;
+  margin: 0;
+  width: 15rem;
+  height: 48.25rem;
+  background: #60656f;
+  position: absolute;
+  top: -1rem;
+
+  .logo {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 3rem;
+    transition: 0.2s;
+
+    &:hover {
+      a {
+        color: orangered;
+        transform-origin: right;
+      }
+
+      span {
+        color: #444444;
+      }
+    }
+  }
+  #job-title {
+    position: absolute;
+    top: 12rem;
+    left: 4.75rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #444444;
+    cursor: pointer;
+  }
+
+  span {
+    color: orangered;
+  }
+
+  .primary-nav {
+    // border: solid;
+    list-style-type: none;
+    height: 27.5rem;
+    position: absolute;
+    top: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+
+    .current {
+      background: var(--primary-color);
+    }
+
+    a {
+      text-decoration: none;
+      color: #444444;
+      font-size: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+
+      .button {
+        background-color: #60656f;
+        border: 0;
+        width: 9rem;
+        height: 4rem;
+        padding-right: 0;
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        font-weight: bold;
+        color: #444444;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+        cursor: pointer;
+        transition: ease-in 0.1s;
+
+        &:hover {
+          background-color: var(--primary-color);
+          color: orangered;
+          transform: scale(1.15);
+          transform-origin: center;
+        }
+      }
+    }
+  }
+
+  ul.secondary-nav {
+    //   border: solid;
+    list-style-type: none;
+    position: absolute;
+    bottom: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 3.75rem;
+    margin-top: 0;
+
+    #link-logo {
+      height: 2.8rem;
+      width: 2.8rem;
+      position: absolute;
+      left: 10rem;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+
+    #git-logo {
+      height: 2.5rem;
+      width: 2.5rem;
+      position: absolute;
+      left: 5rem;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+section.hero {
+  .hero-cta {
+    .hero-container {
+      .dumb-way {
+        width: 35%;
+        height: 45vh;
+        margin-left: 15rem;
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: bolder;
+        font-size: 5rem;
+        padding-left: 7rem;
+        padding-top: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        span {
+          &:hover {
+            color: orangered;
+          }
+        }
+      }
+
+      #joke {
+        font-size: 1.75rem;
+        width: 35%;
+        margin-left: 15rem;
+        display: flex;
+        justify-content: center;
+        padding-left: 3rem;
+      }
+
+      #serious {
+        font-size: 1.75rem;
+        width: 35%;
+        margin-left: 15rem;
+        display: flex;
+        justify-content: center;
+        padding-left: 3rem;
+      }
+
+      .contact-button {
+        width: 11rem;
+        height: 3rem;
+        margin-left: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        cursor: pointer;
+        background: var(--primary-color);
+        font-family: "oswald";
+        font-size: 2rem;
+        font-weight: bold;
+        color: #444444;
+        transition: ease-in 0.1s;
+
+      &:hover {
+        background-color: var(--primary-color);
+        color: orangered;
+        transform: scale(1.15);
+        transform-origin: center;
+      }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.about-hero {
+  .about-hero-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    .super-j {
+      height: 18rem;
+      width: 24rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-hero-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+      }
+    }
+    .image {
+      display: flex;
+      justify-content: flex-start;
+      width: 75%;
+      margin-left: 15rem;
+
+      .water {
+        height: 7.5rem;
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(4);
+        }
+      }
+
+      .feature {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        font-size: 1.3rem;
+      }
+    }
+
+    .music-div {
+      margin-top: 0;
+      margin-left: -2rem;
+      font-size: 1.3rem;
+
+      #spot-logo {
+        height: 2rem;
+        position: relative;
+        left: 52rem;
+        bottom: 3.25rem;
+        transition: 0.15s;
+
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+}
+
+.project-hero {
+  .project-hero-cta {
+    height: 0;
+    .project-image {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 56%;
+      padding-right: 0;
+
+      .thin-chip {
+        height: 15rem;
+        width: 30rem;
+        padding-bottom: 2rem;
+        margin-top: 5rem;
+        transition: 0.2s;
+        z-index: 888;
+
+        &:hover {
+          transform: scale(1.75);
+        }
+      }
+    }
+
+    p {
+      width: 37%;
+      left: 58rem;
+      position: relative;
+      bottom: 38rem;
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    ul {
+      width: 35%;
+      height: 25vh;
+      position: relative;
+      bottom: 10rem;
+      left: 58rem;
+      bottom: 37.8rem;
+      font-size: 1.7rem;
+
+      li {
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+}
+
+.skills-hero {
+  .skills-hero-cta {
+    .skills-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 30.5rem;
+      width: 35%;
+      margin-top: 8rem;
+
+      .stack {
+        height: 4rem;
+        width: 4rem;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+    .skills-container2 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 25%;
+      margin-left: 35rem;
+      margin-top: 3rem;
+
+      .stack1 {
+        height: 4rem;
+        width: 4rem;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+    .skill-div {
+      margin-top: 4rem;
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        padding-right: 1;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+    }
+    .tech-list {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 55%;
+      margin-left: 20rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    span {
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+.contact-hero {
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-hero-cta {
+    margin-top: 5rem;
+
+    .img-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      margin-right: 35rem;
+      margin-top: 5rem;
+
+      #link {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.2s;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+    }
+    
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin-left: 20rem;
+
+    #name-input {
+      font-family: "oswald";
+    }
+  }
+
+  .input-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin-left: 20rem;
+    margin-top: 1rem;
+
+    #email {
+      font-family: "oswald";
+    }
+  }
+
+  .input-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+    width: 250px;
+    margin-left: 20rem;
+    margin-top: 3rem;
+
+    #textarea {
+      font-family: "oswald";
+      
+    }
+
+    #submit {
+      background-color: var(--primary-color);
+      border: 0;
+      width: 250px;
+      height: 2rem;
+      padding-right: 0;
+      font-family: var(--primary-font);
+      font-size: 2rem;
+      font-weight: bold;
+      color: #444444;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 1rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      transition: ease-in 0.1s;
+
+      &:hover {
+        background-color: var(--primary-color);
+        color: orangered;
+        transform: scale(1.15);
+        transform-origin: center;
+      }
+    }
+  }
+}
+}

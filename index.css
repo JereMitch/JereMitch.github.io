@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+:root {
+  --primary-color: #f0f2ef;
+  --primary-font: "oswald";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "oswald";
+}
+
+.navbar {
+  margin: 0;
+  width: 15rem;
+  height: 48.25rem;
+  background: #60656f;
+  position: absolute;
+  top: -1rem;
+}
+
+.navbar .logo {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 3rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .logo:hover a {
+  color: orangered;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.navbar .logo:hover span {
+  color: #444444;
+}
+
+.navbar #job-title {
+  position: absolute;
+  top: 12rem;
+  left: 4.75rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #444444;
+  cursor: pointer;
+}
+
+.navbar span {
+  color: orangered;
+}
+
+.navbar .primary-nav {
+  list-style-type: none;
+  height: 27.5rem;
+  position: absolute;
+  top: 13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+.navbar .primary-nav .current {
+  background: var(--primary-color);
+}
+
+.navbar .primary-nav a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar .primary-nav a .button {
+  background-color: #60656f;
+  border: 0;
+  width: 9rem;
+  height: 4rem;
+  padding-right: 0;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
+}
+
+.navbar .primary-nav a .button:hover {
+  background-color: var(--primary-color);
+  color: orangered;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.navbar ul.secondary-nav {
+  list-style-type: none;
+  position: absolute;
+  bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 3.75rem;
+  margin-top: 0;
+}
+
+.navbar ul.secondary-nav #link-logo {
+  height: 2.8rem;
+  width: 2.8rem;
+  position: absolute;
+  left: 10rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar ul.secondary-nav #link-logo:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.navbar ul.secondary-nav #git-logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  left: 5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar ul.secondary-nav #git-logo:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section.hero .hero-cta .hero-container .dumb-way {
+  width: 35%;
+  height: 45vh;
+  margin-left: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: bolder;
+  font-size: 5rem;
+  padding-left: 7rem;
+  padding-top: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+section.hero .hero-cta .hero-container .dumb-way a {
+  text-decoration: none;
+  color: black;
+}
+
+section.hero .hero-cta .hero-container .dumb-way span:hover {
+  color: orangered;
+}
+
+section.hero .hero-cta .hero-container #joke {
+  font-size: 1.75rem;
+  width: 35%;
+  margin-left: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3rem;
+}
+
+section.hero .hero-cta .hero-container #serious {
+  font-size: 1.75rem;
+  width: 35%;
+  margin-left: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3rem;
+}
+
+section.hero .hero-cta .hero-container .contact-button {
+  width: 11rem;
+  height: 3rem;
+  margin-left: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid;
+  cursor: pointer;
+  background: var(--primary-color);
+  font-family: "oswald";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444444;
+  -webkit-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
+}
+
+section.hero .hero-cta .hero-container .contact-button:hover {
+  background-color: var(--primary-color);
+  color: orangered;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+section.hero .hero-cta .hero-container a {
+  text-decoration: none;
+}
+
+.about-hero .about-hero-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.about-hero .about-hero-cta .super-j {
+  height: 18rem;
+  width: 24rem;
+  margin-bottom: 2rem;
+}
+
+.about-hero .about-hero-cta .about-hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-hero .about-hero-cta .about-hero-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+}
+
+.about-hero .about-hero-cta .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 75%;
+  margin-left: 15rem;
+}
+
+.about-hero .about-hero-cta .image .water {
+  height: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-hero .about-hero-cta .image .water:hover {
+  -webkit-transform: scale(4);
+          transform: scale(4);
+}
+
+.about-hero .about-hero-cta .image .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.about-hero .about-hero-cta .music-div {
+  margin-top: 0;
+  margin-left: -2rem;
+  font-size: 1.3rem;
+}
+
+.about-hero .about-hero-cta .music-div #spot-logo {
+  height: 2rem;
+  position: relative;
+  left: 52rem;
+  bottom: 3.25rem;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.about-hero .about-hero-cta .music-div #spot-logo:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.project-hero .project-hero-cta {
+  height: 0;
+}
+
+.project-hero .project-hero-cta .project-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 56%;
+  padding-right: 0;
+}
+
+.project-hero .project-hero-cta .project-image .thin-chip {
+  height: 15rem;
+  width: 30rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 888;
+}
+
+.project-hero .project-hero-cta .project-image .thin-chip:hover {
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+}
+
+.project-hero .project-hero-cta p {
+  width: 37%;
+  left: 58rem;
+  position: relative;
+  bottom: 38rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.project-hero .project-hero-cta ul {
+  width: 35%;
+  height: 25vh;
+  position: relative;
+  bottom: 10rem;
+  left: 58rem;
+  bottom: 37.8rem;
+  font-size: 1.7rem;
+}
+
+.project-hero .project-hero-cta ul li {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.skills-hero .skills-hero-cta .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30.5rem;
+  width: 35%;
+  margin-top: 8rem;
+}
+
+.skills-hero .skills-hero-cta .skills-container .stack {
+  height: 4rem;
+  width: 4rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.skills-hero .skills-hero-cta .skills-container .stack:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.skills-hero .skills-hero-cta .skills-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  margin-left: 35rem;
+  margin-top: 3rem;
+}
+
+.skills-hero .skills-hero-cta .skills-container2 .stack1 {
+  height: 4rem;
+  width: 4rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.skills-hero .skills-hero-cta .skills-container2 .stack1:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.skills-hero .skills-hero-cta .skill-div {
+  margin-top: 4rem;
+}
+
+.skills-hero .skills-hero-cta .skill-div h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 1;
+}
+
+.skills-hero .skills-hero-cta .skill-div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.skills-hero .skills-hero-cta .tech-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55%;
+  margin-left: 20rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.skills-hero .skills-hero-cta span {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.skills-hero .skills-hero-cta span:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.contact-hero h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+}
+
+.contact-hero h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-hero .contact-hero-cta {
+  margin-top: 5rem;
+}
+
+.contact-hero .contact-hero-cta .img-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  margin-right: 35rem;
+  margin-top: 5rem;
+}
+
+.contact-hero .contact-hero-cta .img-link #link {
+  height: 10rem;
+  width: 10rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-hero .contact-hero-cta .img-link #link:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.contact-hero .contact-hero-cta .input-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  margin-left: 20rem;
+}
+
+.contact-hero .contact-hero-cta .input-section #name-input {
+  font-family: "oswald";
+}
+
+.contact-hero .contact-hero-cta .input-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  margin-left: 20rem;
+  margin-top: 1rem;
+}
+
+.contact-hero .contact-hero-cta .input-section1 #email {
+  font-family: "oswald";
+}
+
+.contact-hero .contact-hero-cta .input-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15rem;
+  width: 250px;
+  margin-left: 20rem;
+  margin-top: 3rem;
+}
+
+.contact-hero .contact-hero-cta .input-section2 #textarea {
+  font-family: "oswald";
+}
+
+.contact-hero .contact-hero-cta .input-section2 #submit {
+  background-color: var(--primary-color);
+  border: 0;
+  width: 250px;
+  height: 2rem;
+  padding-right: 0;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
+}
+
+.contact-hero .contact-hero-cta .input-section2 #submit:hover {
+  background-color: var(--primary-color);
+  color: orangered;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+/*# sourceMappingURL=index.css.map */

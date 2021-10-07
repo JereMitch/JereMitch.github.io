@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
+    </style>
+  </head>
+  <body>
+    
+    <div class="navbar">
+        <h1 class="logo"><a href="./index.html"><span>J</span>eremy<span><br>&emsp;M</span>itchell</br></a></h1>
+        <p id="job-title">Web Developer</p>
+      <div class="container">
+        <ul class="primary-nav">
+            <li ><a href="./skills.html"><button class="button">Abilities</button></a></li>
+            <li><a href="./project.html"><button class="button">Projects</button></a></li>
+            <li><a href="./about.html"><button class="button">About</button></a></li>
+            <liclass="current"><a href="./contact.html"><button class="button">Contact</button></a></li>
+          </ul>
+        <ul class="secondary-nav">
+          <li>
+            <a href="#">
+              <img
+                class="social-logo"
+                id="link-logo"
+                src="https://iconape.com/wp-content/files/yd/367773/svg/logo-linkedin-logo-icon-png-svg.png"
+                alt="linked in"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JereMitch" target="_blank">
+              <img
+                class="social-logo"
+                id="git-logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                alt="github"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact-hero">
+      <h1>Feel Free To Contact Me!</h1>
+      <h2>Or Check Out My LinkdIn</h2>
+      <div class="contact-hero-cta">
+        <div class="img-link">
+          <a href="#">
+          <img
+            class="social-logo"
+            id="link"
+            src="https://iconape.com/wp-content/files/yd/367773/svg/logo-linkedin-logo-icon-png-svg.png"
+            alt="linked in"
+            />
+          </a>
+        </div>
+        
+        <div class="input-section">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" name="name" id="name-input" placeholder="Name" autocomplete="off">
+          </div>
+          <div class="input-section1">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="off">
+          </div>
+          <div class="input-section2">
+            <label for="input-field" id="text-label">Leave Me A Message:</label>
+            <textarea name="input-field" id="textarea" cols="30" rows="10" placeholder="Leave a message" autocomplete="off"></textarea>
+            <button id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src='./contact.js'></script>
+  </body>
+</html>
